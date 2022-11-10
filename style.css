@@ -8,6 +8,7 @@
 }
  body {
     margin: 0;
+    font-family: "roboto", sans-serif;
  }
 header {
     font-family : 'Shrikhand', cursive;
@@ -15,4 +16,20 @@ header {
     box-shadow: inset;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     padding: 0.3rem;
+    margin: 0;
+    position: relative;
+}
+
+main .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 8px;
+}
+
+main .city i {
+    font-size: 20px;
 }
