@@ -1,17 +1,17 @@
-
-
 *,
 ::before,
 ::after {
     box-sizing: border-box;
-    
+
 }
- body {
+
+body {
     margin: 0;
     font-family: "roboto", sans-serif;
- }
+}
+
 header {
-    font-family : 'Shrikhand', cursive;
+    font-family: 'Shrikhand', cursive;
     text-align: center;
     box-shadow: inset;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
@@ -32,4 +32,37 @@ main .city {
 
 main .city i {
     font-size: 20px;
+}
+
+/* exporer */
+
+.explorer {
+    text-align: center;
+}
+
+.explorer h2 {
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+.explorer p {
+    font-size: 16px;
+}
+
+.explorer button {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+transition: all 200ms;
+margin-top: 16px;
+}
+
+.explorer button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
