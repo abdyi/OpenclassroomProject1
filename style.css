@@ -20,7 +20,7 @@ header {
     position: relative;
 }
 
-main .city {
+.city {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,11 +28,13 @@ main .city {
     background-color: #f3f3f3;
     text-align: center;
     padding: 8px;
+    width: 100%;
 }
 
 main .city i {
     font-size: 20px;
 }
+
 
 /* exporer */
 
@@ -68,7 +70,13 @@ main .city i {
 }
 
 .espace {
-    padding: 0 16px;
+    padding: 0 112px;
+}
+
+@media (max-width:1000px) {
+    .espace {
+        padding: 0 16px;
+    }
 }
 
 .tuto li {
@@ -106,6 +114,7 @@ main .city i {
 
 .tuto {
     counter-reset: steps;
+    margin-bottom: 32px;
 }
 
 .tuto li::before {
@@ -119,10 +128,162 @@ main .city i {
     display: grid;
     place-items: center;
     position: absolute;
-    bottom: 16px;
+    top: 50%;
     left: -16px;
+    transform: translateY(-50%);
 }
 
 li {
     position: relative;
 }
+
+section {
+    display: block;
+}
+
+.restaurants {
+    background-color: #f6f6f6;
+    padding: 2rem 1rem;
+    
+}
+
+.restaurants__title {
+    margin-bottom: 32px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    }
+
+.card {
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card__img {
+    height: 12rem;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+}
+
+.card__badge {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+}
+ 
+.card__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card__content {
+    flex: 1;
+}
+
+.card__title {
+    margin: 0 0 0.25rem;
+}
+
+.card__subtitle {
+    margin: 0;
+}
+
+.menu__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: initial;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #000;
+}
+
+.menu__btn:hover {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.5s;
+    content: "";
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+}
+
+.menu__like {
+    transition-duration: .25s;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+
+
+.menu__btn:before, .menu__like {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.card__like {
+    background-color: #fff!important;
+}
+
+.footer {
+    background-color: #353535;
+    padding: 0 32px;
+    color: white;
+}
+
+.footer h2 {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 500;
+    padding: 16px 0;
+}
+
