@@ -303,12 +303,12 @@ h2 {
 }
 
 .resto_title {
-    
-padding: 32px 16px;
-margin-top: -32px;
-position: relative;
-background-color: #f6f6f6;
-border-radius: 32px 32px 0 0;
+
+    padding: 32px 16px;
+    margin-top: -32px;
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 32px 32px 0 0;
 }
 
 .resto_title h2 {
@@ -325,7 +325,7 @@ border-radius: 32px 32px 0 0;
 }
 
 .menus-grid {
-    
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -343,8 +343,8 @@ border-radius: 32px 32px 0 0;
 
 .menus_category {
     background: white;
-    
-    
+
+
 }
 
 .menu-item {
@@ -370,7 +370,12 @@ border-radius: 32px 32px 0 0;
     align-items: flex-end;
 }
 
-.menu-item h4,p {
+.menu-item h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item p {
     padding: 0;
     margin: 0;
 }
