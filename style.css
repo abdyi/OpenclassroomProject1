@@ -299,18 +299,92 @@ h2 {
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    display: block;
 }
 
-.resto_main {
+.resto_title {
+    
+padding: 32px 16px;
+margin-top: -32px;
+position: relative;
+background-color: #f6f6f6;
+border-radius: 32px 32px 0 0;
+}
+
+.resto_title h2 {
     font-family: 'Shrikhand', sans-serif;
-
 }
 
-.resto_main .card__content i {
+.resto_title .card__content i {
 
     cursor: pointer;
 }
 
 .card__content h2 {
     padding-left: 16px;
+}
+
+.menus-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.menus-grid .menus_category {
+    /* border: 1px solid red; */
+}
+
+@media (max-width:1000px) {
+    .menus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.menus_category {
+    background: white;
+    
+    
+}
+
+.menu-item {
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    border-radius: 16px;
+}
+
+/* .menu-item:hover {
+
+} 
+
+/* .menu-item > * {
+    border: 1px solid;
+} */
+
+.menu-item_price {
+    margin-left: auto;
+    font-weight: 900;
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu-item h4,p {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item_descrption {
+    padding: 16px;
+}
+
+.menu-item_check {
+    background-color: #99E2D0;
+    margin-right: -44px;
+    width: 44px;
+}
+
+.menu-item_check:hover {
+    margin-right: 0px;
 }
