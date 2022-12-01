@@ -350,7 +350,7 @@ h2 {
 .menu-item {
     display: flex;
     overflow: hidden;
-    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
     border-radius: 16px;
 }
 
