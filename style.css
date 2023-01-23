@@ -283,8 +283,8 @@ h2 {
 .footer h2 {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 500;
-    /* padding: 16px 0;*/
-} 
+    padding: 16px 0;
+}
 
 .footer a {
     color: white;
@@ -293,6 +293,7 @@ h2 {
 
 .footer p {
     cursor: pointer;
+    margin-top: 11px;
 }
 
 .banner img {
